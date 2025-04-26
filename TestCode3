@@ -1,1 +1,11 @@
+def is_disarium(n):
+    return n == sum(int(d)**(i+1) for i, d in enumerate(str(n)))
 
+print("First 10 Disarium numbers:")
+count = 0
+    if is_disarium(n):
+        print(n, end=' ')
+print("\n\nDisarium numbers between 100 and 200:")
+for i in range(100, 201):
+    if is_disarium(i):
+print(i, end=' ')
