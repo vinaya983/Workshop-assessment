@@ -1,1 +1,6 @@
-
+def max_steal(num):
+    a, b = 0, 0
+    for number in num:
+        a, b = b, max(b, a + number)
+    return b
+print(max_steal([6, 7, 1, 3, 8, 2, 5]))
